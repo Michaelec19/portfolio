@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Michael Espinal Cardona | Backend Developer</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            bg: '#0d1117',
+                            card: '#161b22',
+                            border: '#30363d',
+                            text: '#c9d1d9',
+                            heading: '#ffffff',
+                            primary: '#58a6ff',
+                            secondary: '#2ea043',
+                            accent: '#f0883e',
+                            purple: '#bc8cff',
+                            yellow: '#e3b341'
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="font-sans antialiased bg-brand-bg text-brand-text selection:bg-brand-primary selection:text-white relative">
+    <div class="grid-background"></div>
+
+    <nav class="border-b border-brand-border bg-brand-bg/80 backdrop-blur-md sticky top-0 z-50">
+        <div class="max-w-6xl mx-auto px-6 py-4 flex flex-col md:flex-row justify-between items-center gap-4">
+            <span class="font-mono text-brand-heading font-bold text-xl flex items-center gap-2">
+                <img src="assets/img/logos/binary_yellow.svg" alt="Logo" class="w-8 h-8 inline-block" onerror="this.style.display='none'">
+                <span class="text-brand-primary">{</span> michael_ec <span class="text-brand-primary">}</span>
+            </span>
+            <div class="flex gap-4 md:gap-6 font-mono text-sm md:text-base">
+                <a href="#stack" class="flex items-center gap-2 px-3 py-1.5 rounded-md text-brand-primary hover:bg-brand-card hover:border-brand-primary border border-transparent transition-all">
+                    <img src="assets/img/logos/code_blue.svg" alt="Stack" class="w-6 h-6" onerror="this.style.display='none'">
+                    Stack
+                </a>
+                <a href="#experiencia" class="flex items-center gap-2 px-3 py-1.5 rounded-md text-brand-purple hover:bg-brand-card hover:border-brand-purple border border-transparent transition-all">
+                    <img src="assets/img/logos/docs_purple.svg" alt="Experiencia" class="w-6 h-6" onerror="this.style.display='none'">
+                    Experiencia
+                </a>
+                <a href="#proyectos" class="flex items-center gap-2 px-3 py-1.5 rounded-md text-brand-secondary hover:bg-brand-card hover:border-brand-secondary border border-transparent transition-all">
+                    <img src="assets/img/logos/folder_open_green.svg" alt="Proyectos" class="w-6 h-6" onerror="this.style.display='none'">
+                    Proyectos
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="relative border-b border-brand-border/50">
+        <header class="relative z-10 max-w-5xl mx-auto px-6 py-20 flex flex-col-reverse md:flex-row items-center gap-12">
+            <div class="flex-1 text-center md:text-left fade-in">
+                <p class="font-mono text-brand-secondary mb-3 flex items-center justify-center md:justify-start gap-2">
+                    <img src="assets/img/logos/cursor.svg" alt="Cursor" class="w-5 h-5 animate-pulse" onerror="this.style.display='none'">
+                    >_ Hola mundo, soy
+                </p>
+                <h1 class="text-4xl md:text-6xl font-extrabold text-brand-heading mb-4 tracking-tight">Michael Espinal Cardona</h1>
+                <h2 class="text-2xl md:text-3xl font-semibold text-brand-primary">
+                    Desarrollador Jr Java Backend
+                </h2>
+
+                <div class="flex items-center justify-center md:justify-start gap-2 mt-4 mb-8 font-mono text-brand-text/80 text-lg">
+                    <span>📍</span> Medellín, Colombia
+                </div>
+
+                <a href="#stack" class="inline-flex items-center gap-2 bg-brand-primary text-brand-bg font-mono font-bold py-3 px-6 rounded hover:bg-blue-400 transition transform hover:scale-105">
+                    Descubrir mi perfil
+                    <img src="assets/img/logos/menu.svg" alt="Menu" class="w-5 h-5 filter invert" onerror="this.style.display='none'">
+                </a>
+            </div>
+
+            <div class="w-56 h-56 md:w-80 md:h-80 shrink-0 fade-in delay-100 relative group">
+                <div class="absolute inset-0 bg-brand-primary rounded-full blur-xl opacity-20 group-hover:opacity-40 transition duration-500"></div>
+                <img src="assets/img/profile-photo.png" alt="Michael Espinal Cardona" class="w-full h-full object-cover rounded-full border-4 border-brand-border shadow-2xl group-hover:border-brand-primary transition duration-500 relative z-10 bg-brand-card">
+            </div>
+        </header>
+    </div>
+
+    <div class="max-w-5xl mx-auto px-6 py-16">
+        <main class="space-y-24">
+
+            <section id="sobre-mi" class="bg-brand-card border border-brand-border rounded-xl overflow-hidden shadow-2xl fade-in relative z-10">
+                <div class="bg-[#090b0f] border-b border-brand-border px-4 py-3 flex items-center justify-between">
+                    <div class="window-dots"></div>
+                    <span class="font-mono text-sm text-gray-400 flex items-center gap-2">
+                        <img src="assets/img/logos/window_buttons_dark.svg" alt="Window" class="w-4 h-4" onerror="this.style.display='none'">
+                        01_sobre_mi.md
+                    </span>
+                    <div class="w-12"></div>
+                </div>
+                <div class="p-6 md:p-8 font-mono text-sm md:text-base leading-relaxed">
+                    <p class="text-brand-text">
+                        <span class="text-brand-purple">import</span> IngenieroSoftware <span class="text-brand-purple">from</span> 'Medellín';<br><br>
+
+                        Ingeniero de Software Comercial con formación complementaria en Análisis y Desarrollo de
+                        Sistemas de Información. Estoy especializado en desarrollo backend, diseño de arquitecturas
+                        limpias y creación de APIs RESTful. Cuento con experiencia freelance en el ciclo de vida
+                        completo de aplicaciones web: desde el modelado de bases de datos relacionales y el desarrollo
+                        con Java/Spring Boot, hasta la optimización de rendimiento y el despliegue.
+                        Me destaco por aplicar buenas prácticas, incluyendo pruebas automatizadas, documentación
+                        estandarizada y flujos de integración continua (CI/CD) bajo entornos contenerizados. Resolutivo,
+                        enfocado en la mejora continua y en entregar soluciones eficientes alineadas a las necesidades
+                        del negocio.
+                    </p>
+                </div>
+            </section>
+
+            <section id="stack" class="fade-in">
+                <h3 class="font-mono text-3xl text-brand-heading mb-8 flex items-center gap-3 bg-brand-bg/80 inline-flex pr-4 rounded-lg">
+                    <img src="assets/img/logos/code_blue.svg" alt="Stack" class="w-8 h-8" onerror="this.style.display='none'">
+                    Stack_Tecnológico
+                </h3>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 relative z-10">
+                    <div class="bg-brand-card/90 backdrop-blur border border-brand-border hover:border-brand-primary transition rounded-lg p-6 group shadow-lg">
+                        <h4 class="font-mono text-brand-primary mb-4 border-b border-brand-border pb-2 group-hover:border-brand-primary transition">Lenguajes</h4>
+                        <div class="flex flex-wrap gap-4">
+                            <div class="flex flex-col items-center gap-2">
+                                <i class="devicon-java-plain text-5xl text-brand-text group-hover:text-[#f89820] transition-colors"></i>
+                                <span class="text-xs font-mono">Java</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-brand-card/90 backdrop-blur border border-brand-border hover:border-brand-secondary transition rounded-lg p-6 group shadow-lg">
+                        <h4 class="font-mono text-brand-secondary mb-4 border-b border-brand-border pb-2 group-hover:border-brand-secondary transition">Frameworks & Entornos</h4>
+                        <div class="flex flex-wrap gap-6">
+                            <div class="flex flex-col items-center gap-2">
+                                <i class="devicon-spring-original text-5xl text-brand-text group-hover:text-[#6db33f] transition-colors"></i>
+                                <span class="text-xs font-mono">Spring Boot</span>
+                            </div>
+                            <div class="flex flex-col items-center gap-2">
+                                <i class="devicon-hibernate-plain text-5xl text-brand-text group-hover:text-[#59666c] transition-colors"></i>
+                                <span class="text-xs font-mono">Hibernate</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-brand-card/90 backdrop-blur border border-brand-border hover:border-brand-accent transition rounded-lg p-6 group shadow-lg">
+                        <h4 class="font-mono text-brand-accent mb-4 border-b border-brand-border pb-2 group-hover:border-brand-accent transition">Bases de Datos</h4>
+                        <div class="flex flex-wrap gap-6">
+                            <div class="flex flex-col items-center gap-2">
+                                <i class="devicon-mysql-original text-5xl text-brand-text group-hover:text-[#00758f] transition-colors"></i>
+                                <span class="text-xs font-mono">MySQL</span>
+                            </div>
+                            <div class="flex flex-col items-center gap-2">
+                                <i class="devicon-postgresql-plain text-5xl text-brand-text group-hover:text-[#336791] transition-colors"></i>
+                                <span class="text-xs font-mono">PostgreSQL</span>
+                            </div>
+                            <div class="flex flex-col items-center gap-2 justify-center h-[50px]">
+                                <span class="font-bold text-xl text-brand-text group-hover:text-white transition-colors">SQL</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-brand-card/90 backdrop-blur border border-brand-border hover:border-brand-purple transition rounded-lg p-6 group shadow-lg">
+                        <h4 class="font-mono text-brand-purple mb-4 border-b border-brand-border pb-2 group-hover:border-brand-purple transition">Cloud & DevOps</h4>
+                        <div class="flex flex-wrap gap-6">
+                            <div class="flex flex-col items-center gap-2">
+                                <i class="devicon-amazonwebservices-plain-wordmark text-5xl text-brand-text group-hover:text-[#ff9900] transition-colors"></i>
+                                <span class="text-xs font-mono">AWS</span>
+                            </div>
+                            <div class="flex flex-col items-center gap-2">
+                                <i class="devicon-docker-plain text-5xl text-brand-text group-hover:text-[#2496ed] transition-colors"></i>
+                                <span class="text-xs font-mono">Docker</span>
+                            </div>
+                            <div class="flex flex-col items-center gap-2">
+                                <i class="devicon-github-original text-5xl text-brand-text group-hover:text-white transition-colors"></i>
+                                <span class="text-xs font-mono">GitHub</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-brand-card/90 backdrop-blur border border-brand-border hover:border-brand-yellow transition rounded-lg p-6 group shadow-lg">
+                        <h4 class="font-mono text-brand-yellow mb-4 border-b border-brand-border pb-2 group-hover:border-brand-yellow transition">Testing & Docs</h4>
+                        <div class="flex flex-wrap gap-6">
+                            <div class="flex flex-col items-center gap-2">
+                                <i class="devicon-swagger-plain text-5xl text-brand-text group-hover:text-[#85ea2d] transition-colors"></i>
+                                <span class="text-xs font-mono">Swagger</span>
+                            </div>
+                            <div class="flex flex-col items-center gap-2">
+                                <i class="devicon-postman-plain text-5xl text-brand-text group-hover:text-[#ff6c37] transition-colors"></i>
+                                <span class="text-xs font-mono">Postman</span>
+                            </div>
+                            <div class="flex flex-col items-center gap-2 justify-center h-[50px]">
+                                <span class="font-bold text-xl text-brand-text group-hover:text-white transition-colors">JUnit</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-brand-card/90 backdrop-blur border border-brand-border hover:border-[#a5d6ff] transition rounded-lg p-6 group shadow-lg">
+                        <h4 class="font-mono text-[#a5d6ff] mb-4 border-b border-brand-border pb-2 group-hover:border-[#a5d6ff] transition">Arquitectura & Metodologías</h4>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="bg-[#0d1117] border border-brand-border px-3 py-1 rounded text-sm">APIs RESTful</span>
+                            <span class="bg-[#0d1117] border border-brand-border px-3 py-1 rounded text-sm">Arquitectura MVC</span>
+                            <span class="bg-[#0d1117] border border-brand-border px-3 py-1 rounded text-sm">SCRUM</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="experiencia" class="fade-in">
+                <h3 class="font-mono text-3xl text-brand-heading mb-8 flex items-center gap-3 bg-brand-bg/80 inline-flex pr-4 rounded-lg">
+                    <img src="assets/img/logos/docs_purple.svg" alt="Experiencia" class="w-8 h-8" onerror="this.style.display='none'">
+                    Experiencia_Laboral
+                </h3>
+                
+                <div class="flex flex-col gap-8 relative z-10">
+
+                    <div class="bg-brand-card/90 backdrop-blur border border-brand-border hover:border-brand-purple transition rounded-xl overflow-hidden shadow-lg flex flex-col md:flex-row group">
+
+                        <div class="md:w-2/5 h-64 md:h-auto bg-[#0d1117] border-b md:border-b-0 md:border-r border-brand-border relative overflow-hidden flex items-center justify-center">
+                            <img src="assets/img/projects/lanhua.png" alt="Fiverr Freelance" class="w-full h-full object-cover opacity-80 group-hover:opacity-100 group-hover:scale-105 transition duration-500">
+                        </div>
+                        
+                        <div class="p-6 md:p-8 md:w-3/5 flex flex-col">
+                            <div class="flex justify-between items-start mb-2">
+                                <h4 class="text-2xl font-bold text-brand-heading">Freelance Java Back-end</h4>
+                                <span class="font-mono text-xs text-brand-purple border border-brand-purple px-2 py-1 rounded">Oct 2025 – Ago 2026</span>
+                            </div>
+                            <p class="font-mono text-sm text-brand-text mb-4">Fiverr</p>
+                            
+                            <ul class="list-disc list-inside text-sm text-brand-text space-y-3 flex-1 mb-6">
+                                <li>Desarrollo e implementación de soluciones backend escalables utilizando Java y Spring Boot.</li>
+                                <li>Reducción del <span class="text-brand-secondary font-bold">25% en el tiempo de respuesta</span> de un catálogo de +500 SKUs optimizando consultas en PostgreSQL.</li>
+                                <li>Automatización de entornos de prueba y despliegue (CI/CD) mediante GitHub Actions y Docker para AWS.</li>
+                                <li>Aseguramiento de calidad con JUnit y Mockito, y documentación con Swagger.</li>
+                            </ul>
+
+                            <div class="flex flex-wrap gap-2 mt-auto pt-4 border-t border-brand-border">
+                                <span class="bg-[#0d1117] text-brand-primary border border-brand-primary/30 px-3 py-1 rounded-full text-xs font-mono">Java</span>
+                                <span class="bg-[#0d1117] text-brand-secondary border border-brand-secondary/30 px-3 py-1 rounded-full text-xs font-mono">Spring Boot</span>
+                                <span class="bg-[#0d1117] text-[#336791] border border-[#336791]/30 px-3 py-1 rounded-full text-xs font-mono">PostgreSQL</span>
+                                <span class="bg-[#0d1117] text-[#ff9900] border border-[#ff9900]/30 px-3 py-1 rounded-full text-xs font-mono">AWS</span>
+                                <span class="bg-[#0d1117] text-gray-400 border border-gray-600 px-3 py-1 rounded-full text-xs font-mono">Docker</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-brand-card/90 backdrop-blur border border-brand-border hover:border-gray-400 transition rounded-xl overflow-hidden shadow-lg flex flex-col md:flex-row group">
+                        
+                        <div class="md:w-2/5 h-64 md:h-auto bg-[#0d1117] border-b md:border-b-0 md:border-r border-brand-border relative overflow-hidden flex items-center justify-center">
+                            <img src="assets/img/lewagon.png" alt="Le Wagon" class="w-full h-full object-cover opacity-80 group-hover:opacity-100 group-hover:scale-105 transition duration-500">
+                        </div>
+                        
+                        <div class="p-6 md:p-8 md:w-3/5 flex flex-col">
+                            <div class="flex justify-between items-start mb-2">
+                                <h4 class="text-2xl font-bold text-brand-heading">Jr Student Project Analyst</h4>
+                                <span class="font-mono text-xs text-brand-purple border border-brand-purple px-2 py-1 rounded">May 2025 – Nov 2025</span>
+                            </div>
+                            <p class="font-mono text-sm text-brand-text mb-4">Le Wagon</p>
+                            
+                            <ul class="list-disc list-inside text-sm text-brand-text space-y-3 flex-1 mb-6">
+                                <li>Soporte técnico a 3 cohortes (+120 estudiantes) en la estructuración, desarrollo y despliegue de aplicaciones web.</li>
+                                <li>Guía a equipos en la implementación de buenas prácticas de código, manejo de repositorios colaborativos y resolución de conflictos utilizando Git y GitHub.</li>
+                            </ul>
+                            
+                            <div class="flex flex-wrap gap-2 mt-auto pt-4 border-t border-brand-border">
+                                <span class="bg-[#0d1117] text-[#f05032] border border-[#f05032]/30 px-3 py-1 rounded-full text-xs font-mono">Git</span>
+                                <span class="bg-[#0d1117] text-white border border-gray-600 px-3 py-1 rounded-full text-xs font-mono">GitHub</span>
+                                <span class="bg-[#0d1117] text-[#f0db4f] border border-[#f0db4f]/30 px-3 py-1 rounded-full text-xs font-mono">JavaScript</span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+
+            <section id="proyectos" class="fade-in">
+                <h3 class="font-mono text-3xl text-brand-heading mb-8 flex items-center gap-3 bg-brand-bg/80 inline-flex pr-4 rounded-lg">
+                    <img src="assets/img/logos/folder_open_green.svg" alt="Proyectos" class="w-8 h-8" onerror="this.style.display='none'">
+                    Proyectos_Destacados
+                </h3>
+                
+                <div class="bg-brand-card/90 backdrop-blur border border-brand-border hover:border-brand-secondary transition rounded-xl overflow-hidden shadow-lg flex flex-col md:flex-row group relative z-10">
+
+                    <div class="md:w-2/5 h-64 md:h-auto bg-[#0d1117] border-b md:border-b-0 md:border-r border-brand-border relative overflow-hidden">
+                        <img src="assets/img/projects/lanhua.png" alt="Gestión Deportiva" class="w-full h-full object-cover opacity-80 group-hover:opacity-100 group-hover:scale-105 transition duration-500">
+                    </div>
+
+                    <div class="p-6 md:p-8 md:w-3/5 flex flex-col">
+                        <div class="flex justify-between items-start mb-2">
+                            <h4 class="text-2xl font-bold text-brand-heading">Plataforma de Gestión Deportiva</h4>
+                            <span class="font-mono text-xs text-brand-secondary border border-brand-secondary px-2 py-1 rounded">2025-2026</span>
+                        </div>
+                        <p class="font-mono text-sm text-brand-text mb-4">Club Deportivo LanHua</p>
+                        
+                        <p class="text-sm text-brand-text mb-6 flex-1">
+                            Desarrollo de una plataforma web integral bajo arquitectura RESTful para la gestión administrativa y deportiva. Automatización de inscripciones, horarios y control de asistencia de +200 estudiantes. Backend seguro y robusto en Java y MySQL, integrando autenticación basada en tokens (JWT) y una pasarela de pagos. API documentada con OpenAPI/Swagger.
+                        </p>
+                        
+                        <div class="flex flex-wrap gap-2 mt-auto pt-4 border-t border-brand-border">
+                            <span class="bg-[#0d1117] text-brand-primary border border-brand-primary/30 px-3 py-1 rounded-full text-xs font-mono">Java</span>
+                            <span class="bg-[#0d1117] text-brand-secondary border border-brand-secondary/30 px-3 py-1 rounded-full text-xs font-mono">Spring Boot</span>
+                            <span class="bg-[#0d1117] text-brand-accent border border-brand-accent/30 px-3 py-1 rounded-full text-xs font-mono">MySQL</span>
+                            <span class="bg-[#0d1117] text-brand-purple border border-brand-purple/30 px-3 py-1 rounded-full text-xs font-mono">JWT</span>
+                            <span class="bg-[#0d1117] text-gray-400 border border-gray-600 px-3 py-1 rounded-full text-xs font-mono">Swagger</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="educacion" class="fade-in">
+                <h3 class="font-mono text-3xl text-brand-heading mb-8 flex items-center gap-3 bg-brand-bg/80 inline-flex pr-4 rounded-lg">
+                    <img src="assets/img/logos/binary_orange.svg" alt="Educación" class="w-8 h-8" onerror="this.style.display='none'">
+                    Educación
+                </h3>
+                <div class="space-y-8 border-l-2 border-brand-border ml-3 pl-8 relative z-10">
+                    
+                    <div class="relative group bg-brand-card/50 backdrop-blur p-4 rounded-lg border border-transparent hover:border-brand-accent transition">
+                        <div class="absolute -left-[57px] top-6 w-5 h-5 rounded-full bg-brand-bg border-2 border-brand-accent group-hover:bg-brand-accent transition-colors"></div>
+                        <h4 class="text-xl font-bold text-brand-heading group-hover:text-brand-accent transition-colors">Desarrollador Jr. Java</h4>
+                        <div class="font-mono text-sm text-brand-text mt-1">Bootcamp Generation Colombia <span class="text-gray-500">| Jun 2026 - Ago 2026</span></div>
+                    </div>
+
+                    <div class="relative group bg-brand-card/50 backdrop-blur p-4 rounded-lg border border-transparent hover:border-gray-400 transition">
+                        <div class="absolute -left-[57px] top-6 w-5 h-5 rounded-full bg-brand-bg border-2 border-brand-border group-hover:bg-white transition-colors"></div>
+                        <h4 class="text-xl font-bold text-brand-heading">Tecnólogo en Análisis y Desarrollo (ADSI)</h4>
+                        <div class="font-mono text-sm text-brand-text mt-1">SENA <span class="text-gray-500">| Ene 2025 - May 2026</span></div>
+                    </div>
+
+                    <div class="relative group bg-brand-card/50 backdrop-blur p-4 rounded-lg border border-transparent hover:border-gray-400 transition">
+                        <div class="absolute -left-[57px] top-6 w-5 h-5 rounded-full bg-brand-bg border-2 border-brand-border group-hover:bg-white transition-colors"></div>
+                        <h4 class="text-xl font-bold text-brand-heading">Ingeniería de Software Comercial</h4>
+                        <div class="font-mono text-sm text-brand-text mt-1">Jala University, Hawái <span class="text-gray-500">| Jun 2022 - May 2026</span></div>
+                    </div>
+
+                </div>
+            </section>
+
+        </main>
+    </div>
+
+    <section id="contacto" class="max-w-4xl mx-auto px-6 mb-16 fade-in relative z-10 group">
+        <div class="absolute -inset-1 bg-gradient-to-r from-brand-primary via-brand-purple to-brand-secondary rounded-2xl blur opacity-30 group-hover:opacity-60 transition duration-1000"></div>
+        
+        <div class="bg-gradient-to-br from-[#161b22] to-[#0a0d14] border border-brand-border rounded-2xl p-8 md:p-12 shadow-2xl text-center relative overflow-hidden">
+            
+            <div class="flex justify-center mb-6">
+                <div class="p-4 bg-brand-bg rounded-full border border-brand-primary/50 shadow-[0_0_20px_rgba(88,166,255,0.3)] group-hover:scale-110 transition duration-500">
+                    <img src="assets/img/logos/binary_yellow.svg" alt="Contacto" class="w-10 h-10" onerror="this.style.display='none'">
+                </div>
+            </div>
+            
+            <h3 class="text-3xl md:text-4xl font-extrabold text-white mb-4">¡Contáctame!</h3>
+            <p class="text-brand-text font-mono mb-10 max-w-xl mx-auto text-base md:text-lg">
+                ¿Buscas un desarrollador backend resolutivo, enfocado en buenas prácticas y arquitecturas limpias? <span class="text-brand-primary font-bold">Hablemos.</span>
+            </p>
+            
+            <div class="flex flex-wrap justify-center items-center gap-4 font-mono text-sm">
+                <a href="mailto:michaelec519@gmail.com" class="flex items-center gap-2 bg-brand-card border border-brand-border hover:border-brand-primary px-6 py-3 rounded-xl transition hover:shadow-[0_0_15px_rgba(88,166,255,0.3)] hover:-translate-y-1">
+                    <span class="text-lg">✉️</span> Correo
+                </a>
+
+                <a href="https://linkedin.com/" target="_blank" class="flex items-center gap-2 bg-[#0077b5]/10 border border-[#0077b5] text-[#0077b5] hover:bg-[#0077b5] hover:text-white px-6 py-3 rounded-xl transition hover:shadow-[0_0_15px_rgba(0,119,181,0.5)] hover:-translate-y-1 font-bold">
+                    <i class="devicon-linkedin-plain text-lg"></i> LinkedIn
+                </a>
+
+                <a href="https://github.com/" target="_blank" class="flex items-center gap-2 bg-[#ffffff]/10 border border-gray-400 text-white hover:bg-white hover:text-black px-6 py-3 rounded-xl transition hover:shadow-[0_0_15px_rgba(255,255,255,0.3)] hover:-translate-y-1 font-bold">
+                    <i class="devicon-github-original text-lg"></i> GitHub
+                </a>
+
+                <a href="assets/Michael_Espinal_CV.pdf" download="Michael_Espinal_CV.pdf" class="w-full md:w-auto mt-4 md:mt-0 flex items-center justify-center gap-2 bg-gradient-to-r from-brand-primary to-brand-purple text-white px-8 py-3 rounded-xl transition hover:shadow-[0_0_20px_rgba(188,140,255,0.6)] hover:-translate-y-1 font-bold text-base">
+                    📄 Descargar CV
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="border-t border-brand-border pt-8 pb-8 text-center font-mono text-sm text-gray-500 bg-[#090b0f] relative z-10">
+        <p class="font-extrabold text-white mb-4">Contáctame</p>
+        <div class="flex flex-col md:flex-row justify-center items-center gap-4 md:gap-8 mb-6 text-brand-text/80">
+        <span class="flex items-center gap-2">
+            <span>📍</span> Medellín, Colombia
+        </span>
+            <a class="flex items-center gap-2 hover:text-brand-primary transition">
+                <span>✉️</span> michaelec519@gmail.com
+            </a>
+            <a class="flex items-center gap-2 hover:text-brand-secondary transition">
+                <span>📱</span> +57 3196199341
+            </a>
+        </div>
+        <p>>_ Desarrollado por Michael Espinal Cardona © 2026</p>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
