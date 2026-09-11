@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Michael Espinal Cardona | Backend Developer</title>
+    <title>Michael | Backend Dev</title>
+    <link rel="icon" type="image/svg+xml" href="assets/img/logos/binary_orange.svg">
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="css/styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -53,6 +54,10 @@
                 <a href="#proyectos" class="flex items-center gap-2 px-3 py-1.5 rounded-md text-brand-secondary hover:bg-brand-card hover:border-brand-secondary border border-transparent transition-all">
                     <img src="assets/img/logos/folder_open_green.svg" alt="Proyectos" class="w-6 h-6" onerror="this.style.display='none'">
                     Proyectos
+                </a>
+                <a href="#contacto" class="flex items-center gap-2 px-3 py-1.5 rounded-md border hover:border-brand-accent border-transparent transition-all text-orange-500">
+                    <img src="assets/img/logos/binary_orange.svg" alt="Contacto" class="w-6 h-6" onerror="this.style.display='none'">
+                    Contacto
                 </a>
             </div>
         </div>
@@ -109,9 +114,7 @@
                         completo de aplicaciones web: desde el modelado de bases de datos relacionales y el desarrollo
                         con Java/Spring Boot, hasta el despliegue.
                         Me destaco por aplicar buenas prácticas, incluyendo pruebas automatizadas, documentación
-                        estandarizada y flujos de integración continua (CI/CD) bajo entornos contenerizados. Resolutivo,
-                        enfocado en la mejora continua y en entregar soluciones eficientes alineadas a las necesidades
-                        del negocio.
+                        estandarizada y flujos de integración continua (CI/CD) bajo entornos contenerizados.
                     </p>
                 </div>
             </section>
@@ -300,18 +303,32 @@
                             Desarrollo de una plataforma web integral bajo arquitectura RESTful para la gestión administrativa y deportiva. Automatización de inscripciones, horarios y control de asistencia de +200 estudiantes. Backend seguro y robusto en Java y MySQL, integrando autenticación basada en tokens (JWT) y una pasarela de pagos. API documentada con OpenAPI/Swagger.
                         </p>
                         
-                        <div class="flex flex-wrap gap-2 mt-auto pt-4 border-t border-brand-border">
+                        <div class="flex flex-wrap gap-2 mb-4">
                             <span class="bg-[#0d1117] text-brand-primary border border-brand-primary/30 px-3 py-1 rounded-full text-xs font-mono">Java</span>
                             <span class="bg-[#0d1117] text-brand-secondary border border-brand-secondary/30 px-3 py-1 rounded-full text-xs font-mono">Spring Boot</span>
                             <span class="bg-[#0d1117] text-brand-accent border border-brand-accent/30 px-3 py-1 rounded-full text-xs font-mono">MySQL</span>
                             <span class="bg-[#0d1117] text-brand-purple border border-brand-purple/30 px-3 py-1 rounded-full text-xs font-mono">JWT</span>
                             <span class="bg-[#0d1117] text-gray-400 border border-gray-600 px-3 py-1 rounded-full text-xs font-mono">Swagger</span>
                         </div>
+
+                        <div class="mt-auto pt-4 border-t border-brand-border">
+                            <p class="font-mono text-xs text-brand-text/70 uppercase tracking-wider mb-3">Ir a ver el proyecto</p>
+                            <div class="flex gap-3">
+                                <a href="https://github.com/Michaelec19/reserve-one-backend" target="Git Repository" rel="Git Repository" 
+                                class="flex-1 text-center font-mono text-sm font-semibold px-4 py-2.5 rounded-lg border-2 border-brand-primary text-brand-primary hover:bg-brand-primary hover:text-brand-bg hover:shadow-lg hover:shadow-brand-primary/30 transition-all duration-300">
+                                Repo
+                                </a>
+                                <a href="https://michaelec19.github.io/reserve-one-5/" target="Deploy" rel="Deploy" 
+                                class="flex-1 text-center font-mono text-sm font-semibold px-4 py-2.5 rounded-lg bg-brand-secondary text-brand-bg hover:bg-brand-secondary/90 hover:shadow-lg hover:shadow-brand-secondary/40 hover:scale-105 transition-all duration-300">
+                                Deploy
+                                </a>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </section>
 
-             <section>
+            <section>
                 <div class="bg-brand-card/90 backdrop-blur border border-brand-border hover:border-brand-secondary transition rounded-xl overflow-hidden shadow-lg flex flex-col md:flex-row group relative z-10">
                     <div class="md:w-2/5 h-64 md:h-auto bg-[#0d1117] border-b md:border-b-0 md:border-r border-brand-border relative overflow-hidden flex items-center justify-center">
                         <img src="assets/img/projects/todoapp.png" alt="Planificador de Clases LanHua" class="w-full h-full object-cover opacity-80 group-hover:opacity-100 group-hover:scale-105 transition duration-500">
@@ -328,7 +345,7 @@
                             Aplicación para la gestión de la agenda de los entrenadores del Club deportivo LanHua. El desarrollo se centró en una sólida arquitectura backend, diseñando y exponiendo APIs REST con Java. La persistencia de datos relacionales y el estado de las clases se gestionó con Hibernate y PostgreSQL, mientras que los endpoints fueron asegurados mediante autenticación basada en tokens JWT. La interfaz de usuario cliente fue integrada de forma ágil utilizando Bootstrap.
                         </p>
                         
-                        <div class="flex flex-wrap gap-2 mt-auto pt-4 border-t border-brand-border">
+                        <div class="flex flex-wrap gap-2 mb-4">
                             <span class="bg-[#0d1117] text-brand-primary border border-brand-primary/30 px-3 py-1 rounded-full text-xs font-mono">Java</span>
                             <span class="bg-[#0d1117] text-[#59666c] border border-[#59666c]/50 px-3 py-1 rounded-full text-xs font-mono">Hibernate</span>
                             <span class="bg-[#0d1117] text-[#336791] border border-[#336791]/30 px-3 py-1 rounded-full text-xs font-mono">PostgreSQL</span>
@@ -336,9 +353,60 @@
                             <span class="bg-[#0d1117] text-brand-accent border border-brand-accent/30 px-3 py-1 rounded-full text-xs font-mono">APIs REST</span>
                             <span class="bg-[#0d1117] text-[#7952b3] border border-[#7952b3]/40 px-3 py-1 rounded-full text-xs font-mono">Bootstrap</span>
                         </div>
+
+                        <div class="mt-auto pt-4 border-t border-brand-border">
+                            <p class="font-mono text-xs text-brand-text/70 uppercase tracking-wider mb-3">Ir a ver el proyecto</p>
+                            <div class="flex gap-3">
+                                <a href="https://github.com/Michaelec19/to-do-project" target="Git Repository" rel="Git Repository" 
+                                class="flex-1 text-center font-mono text-sm font-semibold px-4 py-2.5 rounded-lg border-2 border-brand-primary text-brand-primary hover:bg-brand-primary hover:text-brand-bg hover:shadow-lg hover:shadow-brand-primary/30 transition-all duration-300">
+                                Repo
+                                </a>
+                                <a href="https://michaelec19.github.io/to-do-project/" target="Deploy" rel="Deploy" 
+                                class="flex-1 text-center font-mono text-sm font-semibold px-4 py-2.5 rounded-lg bg-brand-secondary text-brand-bg hover:bg-brand-secondary/90 hover:shadow-lg hover:shadow-brand-secondary/40 hover:scale-105 transition-all duration-300">
+                                Deploy
+                                </a>
+                            </div>
+                        </div>
                     </div>
                 </div>
-             </section>
+            </section>
+
+            <section>
+                <div class="bg-brand-card/90 backdrop-blur border border-brand-border hover:border-brand-secondary transition rounded-xl overflow-hidden shadow-lg flex flex-col md:flex-row group relative z-10">
+                    <div class="md:w-2/5 h-64 md:h-auto bg-[#0d1117] border-b md:border-b-0 md:border-r border-brand-border relative overflow-hidden flex items-center justify-center">
+                        <img src="assets/img/projects/character-sheet.png" alt="API Character Sheet" class="w-full h-full object-cover opacity-80 group-hover:opacity-100 group-hover:scale-105 transition duration-500">
+                    </div>
+                    <div class="p-6 md:p-8 md:w-3/5 flex flex-col">
+                        <div class="flex justify-between items-start mb-2">
+                            <h4 class="text-2xl font-bold text-brand-heading">API Character Sheet</h4>
+                            <span class="font-mono text-xs text-brand-secondary border border-brand-secondary px-2 py-1 rounded">En Desarrollo</span>
+                        </div>
+                        <p class="font-mono text-sm text-brand-text mb-4">Proyecto Personal</p>
+                        
+                        <p class="text-sm text-brand-text mb-6 flex-1">
+                            API RESTful desarrollada en Java para la gestión de hojas de personaje de Dungeons & Dragons 5ª Edición. Construida sobre una arquitectura por capas (Model, Service, Repository, Resources). La API cuenta con cobertura pacial de pruebas unitarias con JUnite, y actualmente se encuentra en fase de integración con MySQL mediante JDBC.
+                        </p>
+                        
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="bg-[#0d1117] text-brand-primary border border-brand-primary/30 px-3 py-1 rounded-full text-xs font-mono">Java</span>
+                            <span class="bg-[#0d1117] text-brand-accent border border-brand-accent/30 px-3 py-1 rounded-full text-xs font-mono">MySQL</span>
+                            <span class="bg-[#0d1117] text-[#59666c] border border-[#59666c]/50 px-3 py-1 rounded-full text-xs font-mono">JDBC</span>
+                            <span class="bg-[#0d1117] text-brand-purple border border-brand-purple/30 px-3 py-1 rounded-full text-xs font-mono">Maven</span>
+                            <span class="bg-[#0d1117] text-gray-400 border border-gray-600 px-3 py-1 rounded-full text-xs font-mono">JUnit</span>
+                        </div>
+
+                        <div class="mt-auto pt-4 border-t border-brand-border">
+                            <p class="font-mono text-xs text-brand-text/70 uppercase tracking-wider mb-3">Ir a ver el proyecto</p>
+                            <div class="flex gap-3">
+                                <a href="https://github.com/Michaelec19/api-character-sheet" target="Git Repository" rel="Git Repository" 
+                                class="flex-1 text-center font-mono text-sm font-semibold px-3 py-2.5 rounded-lg border-2 border-brand-primary text-brand-primary hover:bg-brand-primary hover:text-brand-bg hover:shadow-lg hover:shadow-brand-primary/30 transition-all duration-300">
+                                Repo
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
 
 
             <section id="educacion" class="fade-in">
