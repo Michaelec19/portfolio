@@ -20,3 +20,40 @@ document.addEventListener('DOMContentLoaded', () => {
         observer.observe(el);
     });
 });
+
+
+document.getElementById('contactForm').addEventListener('submit', function(e) {
+        e.preventDefault();
+        
+        const form = e.target;
+        const formData = new FormData(form);
+        const submitButton = form.querySelector('button[type="submit"]');
+        
+        const originalText = submitButton.innerHTML;
+        submitButton.innerHTML = 'Enviando...';
+        submitButton.disabled = true;
+
+        fetch(form.action, {
+            method: form.method,
+            body: formData,
+            headers: {
+                'Accept': 'application/json'
+            }
+        })
+        .then(response => {
+            if (response.ok) {
+                form.reset(); 
+                alert("Mensaje enviado con éxito");
+            } else {
+                alert("Hubo un error al enviar el mensaje.");
+            }
+        })
+        .catch(error => {
+            console.error('Error:', error);
+            alert("Error de conexión.");
+        })
+        .finally(() => {
+            submitButton.innerHTML = originalText;
+            submitButton.disabled = false;
+        });
+    });
