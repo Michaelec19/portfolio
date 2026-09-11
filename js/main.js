@@ -4,6 +4,7 @@ document.addEventListener('DOMContentLoaded', () => {
         rootMargin: '0px',
         threshold: 0.1
     };
+    
 
     const observer = new IntersectionObserver((entries, observer) => {
         entries.forEach(entry => {
