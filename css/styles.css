@@ -32,7 +32,6 @@ body {
 }
 
 .window-dots::before,
-.window-dots::after,
 .window-dots-inner {
     content: '';
     display: block;
